@@ -1,7 +1,7 @@
 {
     "name": "Thanos Snap",
     "version": "1.0",
-    "description": "Adblocker anti spoiler",
+    "description": "Adblocker Anti Spoiler",
     "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
     "background": {
         "scripts": ["background.js"]
