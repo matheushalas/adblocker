@@ -1,7 +1,13 @@
+//filtro de url para bloquear
+defaultFilters = [
+    "*://*.reddit.com/*",
+    "*://*.youtube.com/*",
+    "*://*.wallpapershome.com/*",
+] 
+
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) { return { cancel: true }},
-    { urls: 
-        ["*://*.reddit.com/*","*://*.youtube.com/*","*://*.wallpapershome.com/*"]},
+    { urls: defaultFilters },
     ["blocking"]
 )
 
